@@ -31,7 +31,7 @@ app.Animation = (function () {
 		// DO NOT EDIT: reveals banner once loaded
 		t.set(banner, {opacity:1});
 		t.set(cta, {transformOrigin: "50% 70%"});
-		t.set(container, {transformOrigin: "50% 50%"});
+		t.set(container, {scale:.5});
 	}
 
 	// --------------------------------------------------------------------------------------
@@ -80,7 +80,7 @@ app.Animation = (function () {
 		.from(cta, .5, {scale: 0, opacity: 0, ease: Sine.easeInOut}, "-=.25");
 
 		tl2.to(flag, 0.1, {display: "block"})
-		.to(sprite, 1, {x: -432, ease: SteppedEase.config(18)}, "+=.25");
+		.to(sprite, 1, {x: -846, ease: SteppedEase.config(18)}, "+=.25");
 		
 	}
 
